@@ -60,6 +60,9 @@
     <ClInclude Include="CSingleton.h">
       <Filter>Source\08.Module</Filter>
     </ClInclude>
+    <ClInclude Include="CDevice.h">
+      <Filter>Source\02.Device</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp">
@@ -70,6 +73,9 @@
     </ClCompile>
     <ClCompile Include="CEngine.cpp">
       <Filter>Source\01.Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CDevice.cpp">
+      <Filter>Source\02.Device</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

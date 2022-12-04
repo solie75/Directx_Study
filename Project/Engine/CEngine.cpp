@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "CEngine.h"
 
+#include "CDevice.h"
+
 CEngine::CEngine()
 	: m_hWnd(nullptr)
 {
@@ -11,7 +13,7 @@ CEngine::~CEngine()
 }
 
 
-void CEngine::EngineInit(HWND _hWnd, UINT _iWidth, UINT _iHeight)
+int CEngine::EngineInit(HWND _hWnd, UINT _iWidth, UINT _iHeight)
 {
 	// 메인 윈도우 해들
 	m_hWnd = _hWnd;
@@ -22,6 +24,14 @@ void CEngine::EngineInit(HWND _hWnd, UINT _iWidth, UINT _iHeight)
 	AdjustWindowRect(&rt, WS_OVERLAPPEDWINDOW, false);
 	SetWindowPos(m_hWnd, nullptr, 10, 10, rt.right - rt.left, rt.bottom - rt.top, 0);
 	ShowWindow(m_hWnd, true);
+
+	// Device 초기화
+	if (FAILED(CDevice::GetInst()->DeviceInit(m_hWnd)))
+	{
+		MessageBox(nullptr, L"Device 초기화 실패", L"에러", MB_OK);
+		return E_FAIL;
+	}
+
 }
 
 void CEngine::EngineProgress()

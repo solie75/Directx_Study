@@ -7,7 +7,7 @@ private:
 	HWND m_hWnd;
 
 public:
-	void EngineInit(HWND _hWnd, UINT _iWidth, UINT _iHeight);
+	int EngineInit(HWND _hWnd, UINT _iWidth, UINT _iHeight);
 	void EngineProgress();
 
 public:

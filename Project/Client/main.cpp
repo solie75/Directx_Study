@@ -74,7 +74,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     }
 
     // CEngine 초기화
-    CEngine::GetInst()->EngineInit(g_hWnd, 1600, 900);
+    if (FAILED(CEngine::GetInst()->EngineInit(g_hWnd, 1600, 900)))
+    {
+        return 0; // 디바이스 생성 실패시 프로그램 종료
+    }
 
     HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_CLIENT));
 
