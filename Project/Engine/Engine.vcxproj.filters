@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Default">
+      <UniqueIdentifier>{53ca8694-f82e-4549-94b2-4ff23de18986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{1e0bcf26-83ba-4728-989e-ed619dc5b284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\00.Header">
+      <UniqueIdentifier>{968de124-c880-4dd7-bcb2-dcb6e16b521f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\01.Engine">
+      <UniqueIdentifier>{2c0917b2-8d45-4ea1-8538-5ef0a8605d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\02.Device">
+      <UniqueIdentifier>{cef73ea7-5c62-4bc3-9858-6567b546b8e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\03.Manager">
+      <UniqueIdentifier>{dc331abb-81f5-43d4-b5a8-0b8ef3d8a021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\04.Resource">
+      <UniqueIdentifier>{b1a12d2c-c126-4c1d-b6ee-774edc8df40b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\05.GameObject">
+      <UniqueIdentifier>{97cba32f-4503-4a47-83c5-b3a9c28d6952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\06.Component">
+      <UniqueIdentifier>{e04a146c-d9c5-45b0-b125-f9a49b1511a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\07.ShaderCode">
+      <UniqueIdentifier>{698d4f21-f58a-4dc3-a3e8-17a336de4c02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\08.Module">
+      <UniqueIdentifier>{fd78b1a3-eb3e-4297-869e-da7267d4b2c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Source\00.Header</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>Source\00.Header</Filter>
+    </ClInclude>
+    <ClInclude Include="struct.h">
+      <Filter>Source\00.Header</Filter>
+    </ClInclude>
+    <ClInclude Include="func.h">
+      <Filter>Source\00.Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CEngine.h">
+      <Filter>Source\01.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CSingleton.h">
+      <Filter>Source\08.Module</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="CEngine.cpp">
+      <Filter>Source\01.Engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
