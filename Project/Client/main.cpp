@@ -46,8 +46,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 {
 
     // TODO: 여기에 코드를 입력합니다.
-    int a = Add(10, 100);
 
+    //int a = Add(10, 100);
     // int b = Mul(100, 200);
 
     // Dll 명시적인 링크

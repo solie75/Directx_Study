@@ -8,6 +8,6 @@
   7개 파일이 복사되었습니다.
   CDevice.cpp
   CEngine.cpp
-C:\Users\shinjoongeun\Documents\GitHub\Directx_Study\Project\Engine\CEngine.cpp(35): warning C4715: 'CEngine::EngineInit': 모든 제어 경로에서 값을 반환하지는 않습니다.
+D:\신중은\Directx_Study\Project\Engine\CEngine.cpp(36): warning C4715: 'CEngine::EngineInit': 모든 제어 경로에서 값을 반환하지는 않습니다.
   pch.cpp
-  Engine.vcxproj -> C:\Users\shinjoongeun\Documents\GitHub\Directx_Study\External\Library\Engine\Engine_d.lib
+  Engine.vcxproj -> D:\신중은\Directx_Study\External\Library\Engine\Engine_d.lib
