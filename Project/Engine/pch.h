@@ -12,7 +12,19 @@
 
 #include <stdlib.h>
 #include <Windows.h>
-#include "global.h"
 
+#include <vector>
+#include <list>
+#include <map>
+#include <string>
+
+using std::vector;
+using std::list;
+using std::map;
+using std::make_pair;
+using std::wstring;
+using std::string;
+
+#include "global.h"
 
 #endif //PCH_H

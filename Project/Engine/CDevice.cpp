@@ -4,27 +4,27 @@
 #include "CEngine.h"
 
 CDevice::CDevice()
-	: m_hWnd(nullptr)
-	, m_Device(nullptr)
-	, m_Context(nullptr)
-	, m_SwapChain(nullptr)
-	, m_RTTex(nullptr)
-	, m_RTV(nullptr)
-	, m_DSTex(nullptr)
-	, m_DSV(nullptr)
-	, m_ViewPort{}
+	//: m_hWnd(nullptr)
+	//, m_Device(nullptr)
+	//, m_Context(nullptr)
+	//, m_SwapChain(nullptr)
+	//, m_RTTex(nullptr)
+	//, m_RTV(nullptr)
+	//, m_DSTex(nullptr)
+	//, m_DSV(nullptr)
+	//, m_ViewPort{}
 {
 }
 
 CDevice::~CDevice()
 {
-	if (nullptr != m_Device) { m_Device->Release(); }
-	if (nullptr != m_Context) { m_Context->Release(); }
-	if (nullptr != m_SwapChain) { m_SwapChain->Release(); }
-	if (nullptr != m_RTTex) { m_RTTex->Release(); }
-	if (nullptr != m_RTV) { m_RTV->Release(); }
-	if (nullptr != m_DSTex) { m_DSTex->Release(); }
-	if (nullptr != m_DSV) { m_DSV->Release(); }
+	//if (nullptr != m_Device) { m_Device->Release(); }
+	//if (nullptr != m_Context) { m_Context->Release(); }
+	//if (nullptr != m_SwapChain) { m_SwapChain->Release(); }
+	//if (nullptr != m_RTTex) { m_RTTex->Release(); }
+	//if (nullptr != m_RTV) { m_RTV->Release(); }
+	//if (nullptr != m_DSTex) { m_DSTex->Release(); }
+	//if (nullptr != m_DSV) { m_DSV->Release(); }
 }
 
 
@@ -71,9 +71,12 @@ int CDevice::DeviceInit(HWND _hWnd, UINT _RenderWidth, UINT _RenderHeight)
 	m_ViewPort.TopLeftX = 0.f;
 	m_ViewPort.TopLeftY = 0.f;
 
-	Vec2 vwindowResol = CEngine::GetInst()->GetWindowResolution();
+	Vec2 vWindowResol = CEngine::GetInst()->GetWindowResolution();
+	m_ViewPort.Width = vWindowResol.x;
+	m_ViewPort.Height = vWindowResol.y;
+
 	m_ViewPort.MinDepth = 0.f;
-	m_ViewPort.MaxDepth = 1.f;
+	m_ViewPort.MaxDepth = 1.f; // 깊이 값의 최대
 
 	m_Context->RSSetViewports(1, &m_ViewPort);
 	
@@ -116,9 +119,9 @@ int CDevice::CreateSwapChain()
 
 	pFactory->CreateSwapChain(m_Device.Get(), &tDesc, &m_SwapChain);
 
-	pDXGIDevice->Release();
-	pAdapter->Release();
-	pFactory->Release();
+	//pDXGIDevice->Release();
+	//pAdapter->Release();
+	//pFactory->Release();
 
 	return S_OK;
 }
@@ -164,4 +167,5 @@ int CDevice::CreateView()
 void CDevice::ClearTarget(float(&_color)[4])
 {
 	m_Context->ClearRenderTargetView(m_RTV.Get(), _color);
+	m_Context->ClearDepthStencilView(m_DSV.Get(), D3D10_CLEAR_DEPTH | D3D10_CLEAR_STENCIL, 1.f, 0);
 }

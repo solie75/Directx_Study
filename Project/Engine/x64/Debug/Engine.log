@@ -1,13 +1,21 @@
 ﻿  .\Project\Engine\CDevice.h
   .\Project\Engine\CEngine.h
+  .\Project\Engine\CKeyMgr.h
+  .\Project\Engine\CPathMgr.h
   .\Project\Engine\CSingleton.h
+  .\Project\Engine\CTimeMgr.h
   .\Project\Engine\define.h
   .\Project\Engine\func.h
   .\Project\Engine\global.h
+  .\Project\Engine\SimpleMath.h
   .\Project\Engine\struct.h
-  7개 파일이 복사되었습니다.
+  .\Project\Engine\Test.h
+  12개 파일이 복사되었습니다.
+  .\Project\Engine\test.fx
+  1개 파일이 복사되었습니다.
+FXC : warning X4717: Effects deprecated for D3DCompiler_47
+  
+  //
+  // FX Version: fx_5_0
   CDevice.cpp
-  CEngine.cpp
-D:\신중은\Directx_Study\Project\Engine\CEngine.cpp(36): warning C4715: 'CEngine::EngineInit': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  pch.cpp
   Engine.vcxproj -> D:\신중은\Directx_Study\External\Library\Engine\Engine_d.lib

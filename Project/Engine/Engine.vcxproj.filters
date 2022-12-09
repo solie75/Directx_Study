@@ -34,6 +34,18 @@
     <Filter Include="Source\08.Module">
       <UniqueIdentifier>{fd78b1a3-eb3e-4297-869e-da7267d4b2c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\08.Module\SimpleMath">
+      <UniqueIdentifier>{93a3516e-6201-4d6e-b2a8-454a8380afd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\03.Manager\01.PathMgr">
+      <UniqueIdentifier>{4b9664c5-221f-4c6f-a5d9-6a47551bdc9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\03.Manager\02.TimeMgr">
+      <UniqueIdentifier>{7f2b3803-c2f8-4dba-b0c3-274b71e35538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\03.Manager\03.KeyMgr">
+      <UniqueIdentifier>{674684b2-466e-4088-8310-9f59179eed74}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -63,6 +75,16 @@
     <ClInclude Include="CDevice.h">
       <Filter>Source\02.Device</Filter>
     </ClInclude>
+    <ClInclude Include="Test.h" />
+    <ClInclude Include="CKeyMgr.h">
+      <Filter>Source\03.Manager\03.KeyMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CPathMgr.h">
+      <Filter>Source\03.Manager\01.PathMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CTimeMgr.h">
+      <Filter>Source\03.Manager\02.TimeMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp">
@@ -77,5 +99,20 @@
     <ClCompile Include="CDevice.cpp">
       <Filter>Source\02.Device</Filter>
     </ClCompile>
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="CKeyMgr.cpp">
+      <Filter>Source\03.Manager\03.KeyMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CPathMgr.cpp">
+      <Filter>Source\03.Manager\01.PathMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CTimeMgr.cpp">
+      <Filter>Source\03.Manager\02.TimeMgr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="test.fx">
+      <Filter>Source\07.ShaderCode</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>

@@ -11,6 +11,7 @@ private:
 
 public:
 	Vec2 GetWindowResolution() { return m_vResolution; }
+	HWND GetMainWnd() { return m_hWnd; }
 
 public:
 	int EngineInit(HWND _hWnd, UINT _iWidth, UINT _iHeight);

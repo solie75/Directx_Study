@@ -15,5 +15,14 @@ using namespace DirectX::PackedVector;
 #pragma comment(lib, "d3dcompiler")
 // Math와 PackedVector 는 헤더안에 구조체와 인라인으로 이미 선언되어 있어 따로 연결해줄 필요 없다
 
+#include <SimpleMath.h>
+using namespace DirectX::SimpleMath;
+
+typedef Vector2 Vec2;
+typedef Vector3 Vec3;
+typedef Vector4 Vec4;
+
+#include "define.h"
 #include "struct.h"
+#include "func.h"
 #include "CSingleton.h"

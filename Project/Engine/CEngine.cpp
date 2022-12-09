@@ -1,7 +1,11 @@
 #include "pch.h"
 #include "CEngine.h"
+#include "CPathMgr.h"
+#include "CTimeMgr.h"
+#include "CKeyMgr.h"
 
 #include "CDevice.h"
+#include "Test.h"
 
 CEngine::CEngine()
 	: m_hWnd(nullptr)
@@ -33,6 +37,14 @@ int CEngine::EngineInit(HWND _hWnd, UINT _iWidth, UINT _iHeight)
 		return E_FAIL;
 	}
 
+	// Manager ÃÊ±âÈ­
+	CPathMgr::GetInst()->PathMgrInit();
+	CTimeMgr::GetInst()->TimeMgrInit();
+	CKeyMgr::GetInst()->KeyMgrInit();
+
+	TestInit();
+
+	return S_OK;
 }
 
 void CEngine::EngineProgress()
@@ -43,6 +55,7 @@ void CEngine::EngineProgress()
 
 void CEngine::CEngineTick()
 {
+	TestTick();
 }
 
 void CEngine::CEngineRender()
@@ -50,6 +63,8 @@ void CEngine::CEngineRender()
 	// ·»´õ¸µ ½ÃÀÛ
 	float arrColor[4] = { 0.4f, 0.4f, 0.4f, 1.f };
 	CDevice::GetInst()->ClearTarget(arrColor);
+
+	TestRender();
 
 	// ·»´õ Á¾·á
 	CDevice::GetInst()->Present();
