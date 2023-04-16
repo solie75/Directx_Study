@@ -84,7 +84,7 @@ int CDevice::DeviceInit(HWND _hWnd, UINT _RenderWidth, UINT _RenderHeight)
 }
 
 
-int CDevice::CreateSwapChain()
+int CDevice::CreateSwapChain()  
 {
 	DXGI_SWAP_CHAIN_DESC tDesc = {};
 

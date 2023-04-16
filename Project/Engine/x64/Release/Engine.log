@@ -1,9 +1,20 @@
-﻿  .\Project\Engine\CEngine.h
+﻿  .\Project\Engine\CDevice.h
+  .\Project\Engine\CEngine.h
+  .\Project\Engine\CKeyMgr.h
+  .\Project\Engine\CPathMgr.h
+  .\Project\Engine\CSingleton.h
+  .\Project\Engine\CTimeMgr.h
   .\Project\Engine\define.h
   .\Project\Engine\func.h
   .\Project\Engine\global.h
+  .\Project\Engine\SimpleMath.h
   .\Project\Engine\struct.h
-  5개 파일이 복사되었습니다.
-  CEngine.cpp
-  pch.cpp
-  Engine.vcxproj -> D:\git\DirectX_43\External\Library\Engine\Engine.lib
+  .\Project\Engine\Test.h
+  12개 파일이 복사되었습니다.
+  .\Project\Engine\test.fx
+  1개 파일이 복사되었습니다.
+FXC : warning X4717: Effects deprecated for D3DCompiler_47
+  
+  //
+  // FX Version: fx_5_0
+  Engine.vcxproj -> C:\Users\shinjoongeun\Documents\GitHub\Directx_Study\External\Library\Engine\Engine.lib

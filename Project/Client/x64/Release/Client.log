@@ -1,9 +1,2 @@
 ﻿  main.cpp
-StaticLib_d.lib(math.obj) : warning LNK4075: '/EDITANDCONTINUE'이(가) '/OPT:ICF' 사양으로 인해 무시됩니다.
-LINK : warning LNK4098: 'MSVCRTD' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
-  코드를 생성하고 있습니다.
-  1 of 5 functions (20.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  코드를 생성했습니다.
-  Client.vcxproj -> D:\git\DirectX_43\OutputFile\bin\Client.exe
+C:\Users\shinjoongeun\Documents\GitHub\Directx_Study\External\Include\Engine\global.h(18,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'SimpleMath.h': No such file or directory
